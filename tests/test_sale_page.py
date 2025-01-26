@@ -1,6 +1,4 @@
-from pages.sale_pages import SalePage
 
-def test_header_title(driver):
-    sale_page = SalePage(driver)
+def test_header_title(sale_page):
     sale_page.open_page()
     sale_page.check_page_header_title_is('Sale')
